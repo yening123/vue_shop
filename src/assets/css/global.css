@@ -4,3 +4,41 @@ html, body, #app {
   padding: 0;
 }
 
+
+/* ---------------------User中----------------------- */
+/* //------------------面包屑全局-------------------- */
+.el-breadcrumb__inner {
+  color: rgb(211, 192, 192) !important;
+}
+
+.is-link {
+  color: white !important;
+}
+
+/* //------------------box-card全局-------------------- */
+.box-card {
+  margin-top: 20px;
+  border-radius: 15px !important;
+}
+
+.btn_caozuo1,
+.btn_caozuo2,
+.btn_caozuo3 {
+  padding-right: 5px !important;
+  border-radius: 15px !important;
+  border: 0px !important;
+}
+
+.btn_caozuo1 {
+  background-color: rgb(7, 192, 248) !important;
+}
+
+.btn_caozuo2 {
+  background-color: rgb(188, 74, 199) !important;
+}
+
+.btn_caozuo3 {
+  background-color: rgb(110, 112, 218) !important;
+}
+
+/* --------------------user结束------------------------ */
