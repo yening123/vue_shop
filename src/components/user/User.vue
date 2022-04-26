@@ -157,6 +157,7 @@
     >
       <p>当前用户:{{ this.userInfo.username }}</p>
       <p>当前角色:{{ this.userInfo.role_name }}</p>
+      <span>分配新角色: </span>
       <el-select v-model="selectedRoleId" placeholder="请选择">
         <el-option
           v-for="item in roleList"

@@ -91,6 +91,55 @@ export default {
 </script>
 
 <style lang='less'>
+.text input.el-input__inner {
+  width: 100%;
+  outline: none;
+  border: 1px solid #4B678C;
+  font-size: 14px;
+  color: #4B678C;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #4B678C;
+}
+
+.focus-message {
+  //消息框
+  background-image: linear-gradient(
+    to right,
+    #1a4c96,
+    #4b5f9e,
+    #6b74a5,
+    #878aad,
+    #a1a1b5
+  ) !important;
+  // font-size: 14px !important;
+  border-radius: 10px !important;
+  justify-content: center !important;
+  border: 0px !important;
+
+  .el-icon-success:before {
+    color: rgba(91, 183, 215) !important;
+  }
+  .el-message__content {
+    font-size: 14px !important;
+    color: #fff !important;
+  }
+}
+
+.err {
+  background-image: linear-gradient(
+    to right,
+    #62525c,
+    #815b6c,
+    #a36276,
+    #c56a7a,
+    #e57378
+  ) !important;
+  .el-icon-error:before {
+    color: rgb(241, 21, 6) !important;
+  }
+}
 </style>
 
 
