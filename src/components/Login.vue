@@ -10,12 +10,12 @@
         class="right"
       >
         <div class="right_con">
-          <h1>LOGIN SIGN UP</h1>
-          <h3>NAME</h3>
+          <h1>电商后台管理</h1>
+          <h3 class="name">NAME</h3>
           <el-form-item prop="username">
             <el-input class="text" type="text" v-model="loginForm.username" />
           </el-form-item>
-          <h3 prop="password">PASSWORD</h3>
+          <h3 prop="password" class="pwd">PASSWORD</h3>
 
           <el-form-item prop="password">
             <el-input
@@ -204,6 +204,7 @@ h3 {
   padding-top: 10px;
   color: #4B678C;
   font-weight: 400;
+  padding-left: 0px;
 }
 
 // .el-input /deep/ .el-input__inner {

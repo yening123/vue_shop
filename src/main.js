@@ -11,6 +11,10 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI);
 
+//导入treeTable
+import ZkTable from 'vue-table-with-tree-grid'
+Vue.component('tree-table', ZkTable)
+
 import axios from 'axios';
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
 // 请求拦截,需要授权的 API ，必须在请求头中使用 `Authorization` 字段提供 `token` 令牌
