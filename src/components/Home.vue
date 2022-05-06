@@ -105,7 +105,7 @@ export default {
 </script>
 
 <style lang='less'>
-.container_box {
+.el-main {
   background-image: linear-gradient(
     to right top,
     #195ad4,
