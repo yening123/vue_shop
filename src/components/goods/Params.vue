@@ -515,6 +515,7 @@ export default {
       const { data: res } = await this.$http.put(
         `categories/${this.cateId}/attributes/${row.attr_id}`,
         {
+          //所需参数
           attr_name: row.attr_name,
           attr_sel: row.attr_sel,
           attr_vals: row.attr_vals.join(" "),

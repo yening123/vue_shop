@@ -5,7 +5,11 @@ html, body, #app {
   min-width: 1366px;
 }
 
-
+/* ----------------Home中--------------- */
+.el-menu-item:hover,
+.el-submenu__title:hover {
+  background-color: rgb(10, 102, 178) !important;
+}
 
 /* ---------------------User中----------------------- */
 /* //------------------面包屑全局-------------------- */
@@ -48,4 +52,33 @@ html, body, #app {
 /* -----------------------roles中----------------------- */
 .el-tag .el-icon-close {
   padding: 0 0;
+}
+
+
+/* ---------------------Add中------------------------- */
+.el-steps {
+  margin: 20px;
+  justify-content: center;
+}
+
+.el-step__title {
+  font-size: 13px !important;
+}
+
+.el-steps i {
+  padding-right: 0px !important;
+}
+
+i {
+  padding-right: 10px;
+}
+
+.el-upload-list__item i {
+  padding-right: 0px !important;
+
+}
+
+.ql-editor {
+  /* 最小高度 */
+  min-height: 300px;
 }

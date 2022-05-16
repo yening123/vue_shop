@@ -104,7 +104,7 @@ export default {
 };
 </script>
 
-<style lang='less'>
+<style lang='less' scoped>
 .el-main {
   background-image: linear-gradient(
     to right top,
@@ -193,8 +193,5 @@ i {
   border-radius: 15px !important;
 }
 
-.el-menu-item:hover,
-.el-submenu__title:hover {
-  background-color: rgb(10, 102, 178) !important;
-}
+
 </style>
