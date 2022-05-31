@@ -9,21 +9,12 @@
     <el-card class="box-card">
       <el-row :gutter="20">
         <el-col :span="7">
-          <el-input
-            placeholder="请输入内容"
-            v-model="queryInfo.query"
-            clearable
-            @clear="getGoodsList"
-          >
-            <el-button
-              slot="append"
-              icon="el-icon-search"
-              @click="getGoodsList"
-            ></el-button>
+          <el-input placeholder="请输入内容" v-model="queryInfo.query" clearable @clear="getGoodsList">
+            <el-button slot="append" icon="el-icon-search" @click="getGoodsList"></el-button>
           </el-input>
         </el-col>
         <el-col :span="5">
-          <el-button  type="primary" @click="addGoods">添加商品</el-button>
+          <el-button type="primary" @click="addGoods">添加商品</el-button>
         </el-col>
       </el-row>
 
@@ -44,31 +35,15 @@
         </el-table-column>
         <el-table-column label="操作" width="200">
           <template slot-scope="scope">
-             <el-button
-              size="small"
-              type="primary"
-              icon="el-icon-edit"
-              class="btn_caozuo1"
-            ></el-button>
-            <el-button
-              size="small"
-              type="primary"
-              icon="el-icon-delete"
-              class="btn_caozuo2"
-              @click="removeById(scope.row.goods_id)"
-            ></el-button>
+            <el-button size="small" type="primary" icon="el-icon-edit" class="btn_caozuo1"></el-button>
+            <el-button size="small" type="primary" icon="el-icon-delete" class="btn_caozuo2"
+              @click="removeById(scope.row.goods_id)"></el-button>
           </template>
         </el-table-column>
       </el-table>
-      <el-pagination
-        @size-change="handleSizeChange"
-        @current-change="handleCurrentChange"
-        :current-page="queryInfo.pagenum"
-        :page-sizes="[10, 15, 20, 25]"
-        :page-size="queryInfo.pagesize"
-        layout="total, sizes, prev, pager, next, jumper"
-        :total="total"
-      >
+      <el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange"
+        :current-page="queryInfo.pagenum" :page-sizes="[10, 15, 20, 25]" :page-size="queryInfo.pagesize"
+        layout="total, sizes, prev, pager, next, jumper" :total="total">
       </el-pagination>
     </el-card>
   </div>
@@ -134,9 +109,17 @@ export default {
         const { data: res } = await this.$http.delete(`goods/${goods_id}`);
 
         if (res.meta.status !== 200) {
-          return this.$message.error("删除失败");
+          return this.$message({
+            customClass: "focus-message err",
+            message: "删除失败",
+            type: "error",
+          });
         }
-        this.$message.success("删除成功");
+        this.$message({
+          customClass: "focus-message",
+          message: "删除成功",
+          type: "success",
+        });
         this.getGoodsList();
       }
     },
@@ -156,6 +139,7 @@ export default {
 .btn_edit {
   background-color: rgb(7, 192, 248);
 }
+
 .btn_del {
   background-color: rgb(180, 7, 248);
 }
