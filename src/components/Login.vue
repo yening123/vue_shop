@@ -10,7 +10,7 @@
         class="right"
       >
         <div class="right_con">
-          <h1>电商后台管理</h1>
+          <h1>心悦家电后台管理</h1>
           <h3 class="name">NAME</h3>
           <el-form-item prop="username">
             <el-input class="text" type="text" v-model="loginForm.username" />

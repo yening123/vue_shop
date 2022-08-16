@@ -8,6 +8,7 @@ import {
 
 import '@/style/element-variables.scss'
 
+//查看物流信息所用到
 import Timeline from './timeline/index.js'
 import TimelineItem from './timeline-item/index.js'
 

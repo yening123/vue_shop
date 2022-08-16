@@ -1,6 +1,0 @@
-  goods_cate[m
-* [32mgoods_params[m
-  login[m
-  master[m
-  rights[m
-  users[m
